@@ -6,7 +6,7 @@ This assay tested the newly published Agent Meter entry path from a clean extern
 
 ## Scope and method
 
-- Read `https://agent-control.net/llms.txt` and fetched the public MCP descriptor at `POST /api/v1/mcp`/`GET /api/v1/mcp` as exposed live.
+- Read `https://agent-control.net/llms.txt`, fetched the public descriptor with `GET /api/v1/mcp`, and confirmed that the live docs advertise `POST /api/v1/mcp` as the Streamable HTTP tool route.
 - Fetched `GET /api/v1/meter/pricing` and `https://agent-control.net/openapi-meter.json`.
 - Chose a fresh random `X-Agent-Pass` identifier; no email, signup, API key, wallet key, or seller-supplied credential was used.
 - Called `POST /api/v1/meter/scan` five times across Solana, Ethereum, and Base addresses, then a sixth time with the same identifier.
