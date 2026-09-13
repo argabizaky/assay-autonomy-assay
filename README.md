@@ -43,4 +43,5 @@ This offer is intentionally small. Its purpose is to convert one ambiguous "the 
 
 ## Active public assays
 
+- [Agent Meter fresh-agent entry assay](assays/agent-control-meter-entry/README.md) — accountless five-look path and sixth-call 402 verified; malformed Solana/Ethereum destinations currently return `risk: new` instead of an input error.
 - [Hermes model-driven Nano payout assay](assays/hermes-model-driven-nano/README.md) — fresh local wallet and live no-node preflight complete; waiting for independent funding and buyer confirmation before a later scheduled run makes the bounded pay/decline/defer decision.
