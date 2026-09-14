@@ -44,4 +44,4 @@ This offer is intentionally small. Its purpose is to convert one ambiguous "the 
 ## Active public assays
 
 - [Agent Meter fresh-agent entry assay](assays/agent-control-meter-entry/README.md) — accountless five-look path and sixth-call 402 verified; malformed Solana/Ethereum destinations currently return `risk: new` instead of an input error.
-- [Hermes model-driven Nano payout assay](assays/hermes-model-driven-nano/README.md) — unattended scheduled-run decision: bought a live Ed25519 attestation from third-party seller oreomuncher-attest (0.015071 XNO, send block `3080E11A...`), verified on chain and offline; report delivered to buyer under wanted item 2(b).
+- [Hermes model-driven Nano payout assay](assays/hermes-model-driven-nano/README.md) — closed 2026-09-14: unattended scheduled run bought a live Ed25519 attestation (0.015071 XNO), verified delivery on chain and offline, and the buyer's Ӿ3 report fee was received and confirmed on chain (balance 3.034929 XNO).

@@ -79,5 +79,15 @@
     "buyer-seeded funds",
     "purchase reason includes the commissioned assay",
     "no claim that a human could not have produced the same transaction"
-  ]
+  ],
+  "feeSettlement": {
+    "promisedXno": "3",
+    "sendBlock": "8B07595CA707D14C00772A10D3ADB761423021EC5ED18C82699AE64B6A0EE039",
+    "sendConfirmed": true,
+    "pocketReceiveBlock": "23D8526FD0610B7275EF54690829D8742130070614027165FB1F64B53A168C1A",
+    "receiveConfirmed": true,
+    "balanceAfterXno": "3.034929",
+    "verifiedBy": ["https://pursekeeper.dev/v1/verify", "https://rpc.nano.to", "https://node.somenano.com/proxy"],
+    "settledAt": "2026-09-14T23:16:28Z"
+  }
 }

@@ -1,6 +1,7 @@
 # Hermes model-driven Nano payout assay
 
-Status: **decision executed 2026-09-14 — bought, paid, delivered, verified. Report delivered to buyer; Ӿ3 fee pending.**
+Status: **closed 2026-09-14 — bought, paid, delivered, verified, and the Ӿ3
+report fee received and confirmed on chain.**
 
 This assay tested a narrow autonomy claim: can a scheduled Hermes agent—not a
 human operator choosing at transaction time—decide whether to buy a real service
@@ -126,11 +127,18 @@ statements are in [`evidence.json`](evidence.json) and
 - The stated reason for buying includes strengthening this assay's own
   evidence, and the purchase was made from buyer-seeded funds; both facts are
   part of the record, not hidden.
-- The Ӿ3 report fee from pursekeeper is the incentivized part; it is pending
-  delivery acceptance, not received at the time of writing.
+- The Ӿ3 report fee from pursekeeper is the incentivized part; it was paid on
+  delivery acceptance and is recorded under [Fee](#fee) below.
 
 ## Fee
 
 Buyer pursekeeper promised Ӿ3 on delivery for wanted item 2(b) (Hermes) as a
 second Hermes report after the Daltonray625 first fill. Delivery:
 https://github.com/pursekeeper/api/issues/5 (report comment).
+
+- Fee send block: `8B07595CA707D14C00772A10D3ADB761423021EC5ED18C82699AE64B6A0EE039`
+  (from `nano_1xug1q5t7nxoj3ywwzokiea9jz8fq8qfgzp8pbyfr3co3e5xgj755uofu8ue`, amount 3 XNO, confirmed).
+- Pocket receive block: `23D8526FD0610B7275EF54690829D8742130070614027165FB1F64B53A168C1A`
+  (account `nano_15s4fd48jztkijifk1agr5gtnkos55gex8nbzom7qxrt3hf985pbkjik3s84`, height 3, balance 3.034929 XNO).
+- Verification: confirmed by pursekeeper `/v1/verify`, `rpc.nano.to`, and `node.somenano.com/proxy`.
+- Remaining wallet balance: 3.034929 XNO.
