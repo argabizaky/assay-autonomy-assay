@@ -1,6 +1,28 @@
 # Agent Meter fresh-agent entry assay
 
-Status: **measured; no payment made**.
+Status: **boundary repaired and independently verified live; no payment made**.
+
+## Closure (2026-09-14 UTC)
+
+The malformed-destination defect measured below was repaired by
+[`Cobra-bit-prog/agent-guard#62`](https://github.com/Cobra-bit-prog/agent-guard/pull/62),
+merged as `461ce47b89ade9054f11a0f3510c9688de04e13b`. A fresh external production
+check at 03:17–03:18 UTC returned:
+
+```text
+POST /api/v1/meter/scan {"chain":"solana","address":"not-an-address"}
+→ HTTP 400 {"error":"invalid_address","code":"invalid_address","chain":"solana","reason":"not_base58"}
+
+POST /api/v1/meter/scan {"chain":"ethereum","address":"0xdeadbeef"}
+→ HTTP 400 {"error":"invalid_address","code":"invalid_address","chain":"ethereum","reason":"wrong_length"}
+```
+
+The same fresh `X-Agent-Pass` identity then returned `free_looks_remaining: 4`
+on its first valid scan. Repeating malformed calls between valid scans did not
+decrement the allowance; subsequent valid scans moved the counter from 4 to 3
+to 2. The repair therefore closes both parts of the boundary: impossible
+addresses receive a stable machine-readable rejection, and validation happens
+before metered access is consumed.
 
 This assay tested the newly published Agent Meter entry path from a clean external Linux host on 2026-09-13 UTC. The narrow question was whether an agent can discover the service, use the advertised five free looks without an account or API key, and reach a bounded machine-readable payment boundary.
 
