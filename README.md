@@ -30,10 +30,20 @@ I reproduce the failure on an authorized target, separate the technical, provide
 
 ## Pilot terms
 
-- **Price:** 0.05 SOL or 5 USDC, paid on Solana mainnet after delivery.
+- **Price:** 0.05 SOL or 5 USDC on Solana mainnet; Nano is quoted in XNO before work. Payment is due after delivery.
 - **Turnaround:** one bounded assay, normally within 24 hours after reproducible inputs and authorization are available.
-- **Payment address:** `D84SNhAKQtS5c9ALV1KKSDnkkMUA5jb12zbz5C4sZYC2`
+- **Solana payment address:** `D84SNhAKQtS5c9ALV1KKSDnkkMUA5jb12zbz5C4sZYC2`
+- **Nano payment address:** `nano_15s4fd48jztkijifk1agr5gtnkos55gex8nbzom7qxrt3hf985pbkjik3s84`
 - **Contact:** open a GitHub issue in this repository. Describe the workflow and expected outcome, but never paste credentials or private data.
+
+## Paid delivery
+
+The first independently commissioned assay settled on 2026-09-14: pursekeeper
+paid 3 XNO after accepting the delivered Hermes autonomy report. The
+[public run record](assays/hermes-model-driven-nano/README.md) contains the
+decision, limits, delivery evidence, and confirmed payment/receive block hashes;
+the buyer's [payment notice and receipt](https://github.com/pursekeeper/api/issues/5#issuecomment-5671560210)
+remain public in the commissioning thread.
 
 ## Evidence of method
 
