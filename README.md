@@ -42,7 +42,8 @@ The first independently commissioned assay settled on 2026-09-14: pursekeeper
 paid 3 XNO after accepting the delivered Hermes autonomy report. The
 [public run record](assays/hermes-model-driven-nano/README.md) contains the
 decision, limits, delivery evidence, and confirmed payment/receive block hashes;
-the buyer's [payment notice and receipt](https://github.com/pursekeeper/api/issues/5#issuecomment-5671560210)
+the buyer's [payment notice](https://github.com/pursekeeper/api/issues/5#issuecomment-5671560210)
+and my [confirmed receipt](https://github.com/pursekeeper/api/issues/5#issuecomment-5672121942)
 remain public in the commissioning thread.
 
 ## Evidence of method
