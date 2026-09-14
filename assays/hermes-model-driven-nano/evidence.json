@@ -1,0 +1,83 @@
+{
+  "schema": "assay.nano-model-driven-run.v1",
+  "measuredAt": "2026-09-14T19:31:16Z",
+  "runtime": {
+    "name": "Hermes Agent",
+    "version": "0.20.1",
+    "model": "sprintcx/tier-1",
+    "node": "v26.7.0",
+    "nanocurrency": "2.5.0",
+    "scheduled": true,
+    "operatorPresent": false
+  },
+  "wallet": {
+    "address": "nano_15s4fd48jztkijifk1agr5gtnkos55gex8nbzom7qxrt3hf985pbkjik3s84",
+    "seedPublished": false,
+    "fundingBlock": "B7D8504E0D42D15B21011F520ACA954DFF1E97D03AABE56489CA70820D2C7CB3",
+    "fundingAmountXno": "0.05",
+    "openBlock": "4C86FEE980C44A9574799496700887DDEE4F13EE7FC964100A52F3C3643598C0",
+    "balanceBeforePaymentXno": "0.05",
+    "balanceAfterPaymentXno": "0.034929"
+  },
+  "decision": {
+    "choice": "buy",
+    "merchantId": "oreomuncher-attest",
+    "product": "Ed25519 attestation of this assay decision record",
+    "reason": "The attestation is a real third-party service that strengthens the audit evidence of this paid assay; the endpoint is reachable and previously verified, and the live price is within the 0.02 XNO cap.",
+    "capXno": "0.02",
+    "alternativesConsidered": [
+      "NanoGPT chat completion",
+      "pyfile-llm chat completion",
+      "Contract Lens OpenAPI review",
+      "Feed Weight Check"
+    ]
+  },
+  "quote": {
+    "endpoint": "https://api.shehriyar.ink/v1/attest/response",
+    "firstHttpStatus": 402,
+    "scheme": "exact",
+    "network": "nano:mainnet",
+    "asset": "XNO",
+    "amountRaw": "15071000000000000000000000000",
+    "amountXno": "0.015071",
+    "payTo": "nano_1zqdw3qf1z8k3jx8jintaiwpo3yz7zqh1me4ph5j439ts8hsppx8dzy4xcsz",
+    "maxTimeoutSeconds": 300,
+    "workThreshold": "fffffff800000000",
+    "rawRequestBodySha256": "2b9bc9ba02e18aa2c5848a897b3e802486d45e15029c126ff687db06ead70d9c",
+    "canonicalPayloadSha256": "f95bffbef2e6ddded4ab8a41f3aa23a57c4de2019b56c95fadb5989c1ba290b0"
+  },
+  "payment": {
+    "sendBlock": "3080E11AFBAABCB8F3500143C628AE0C7D79E06DF0C601E8907F874D3F465051",
+    "confirmed": true,
+    "subtype": "send",
+    "height": 2,
+    "independentRpcChecks": [
+      "https://rpc.nano.to",
+      "https://node.somenano.com/proxy",
+      "https://pursekeeper.dev/v1/verify"
+    ]
+  },
+  "delivery": {
+    "httpStatus": 200,
+    "algorithm": "Ed25519",
+    "canonicalSha256": "f95bffbef2e6ddded4ab8a41f3aa23a57c4de2019b56c95fadb5989c1ba290b0",
+    "rawSha256": "46c44e2419c22ca6e37d9eaeb95578d568e43b610d3abae939f9351356bc8c26",
+    "issuedAt": "2026-09-14T19:26:45.318697Z",
+    "label": "assay-2b-hermes-2026-09-14",
+    "issuer": "https://api.shehriyar.ink",
+    "signatureB64": "Zy3ndhH9FSmKMPjVEzNaWKn2D1+HG7beIeC9virTxBIM18yBCzaXgT4bBhumB3EDAcBe/fwFWxuulHVQBgr1CA==",
+    "publicKeyB64": "pHgeKhYwf908uO1fkknXp2cckVpQ1O+lzvRPyeDrbTQ=",
+    "baseAnchorBlock": 51312329,
+    "offlinePositiveVerification": true,
+    "mutatedLabelNegativeControlVerification": false
+  },
+  "limits": [
+    "one host",
+    "one decision",
+    "one merchant",
+    "one payment",
+    "buyer-seeded funds",
+    "purchase reason includes the commissioned assay",
+    "no claim that a human could not have produced the same transaction"
+  ]
+}
